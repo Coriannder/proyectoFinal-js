@@ -1,0 +1,33 @@
+.container-form{
+
+    max-width: 100vw !important;
+    
+    height: 100%;
+    height: calc(100vh - 56px);
+    background-color: orange;
+
+    display: none;
+    
+    
+
+}
+
+.formulario{
+    position: absolute;
+    right: calc(50vw - 250px);
+    top: 25vh;
+    width: 80vw;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: aquamarine;
+}
+
+@media (max-width: 625px) {
+    .formulario{
+        right: 10vw;
+        top: 10vw;
+        padding: 10vw;
+        top: 20vw;
+    }
+}
