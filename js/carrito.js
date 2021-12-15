@@ -58,13 +58,17 @@
                 $(`#precio-${i}`).text("$ "+ (cantidad*precio))
                 $(`#cantidad-${i}`).val(cantidad).change((e)=>{
                     cantidad = parseInt($(e.target).val());
-                    precio = arrayProductos.find(item => item.producto == $(`#nombre-${i}`).text()).precio;
-                    sessionStorage.setItem('total-valor', precio*cantidad);
-                    console.log(precio*cantidad);
-                    $(`#precio-${i}`).text("$ "+ (cantidad*precio))
-                    arrayCarrito[i].editCantidad(cantidad);
-                    localStorage.setItem('carritoGuardado', JSON.stringify(arrayCarrito));
-                    generarCarrito();
+                    if(cantidad < 1 || isNaN(cantidad)){
+                        $(`#cantidad-${i}`).val(1);
+                    }else{
+                        precio = arrayProductos.find(item => item.producto == $(`#nombre-${i}`).text()).precio;
+                        sessionStorage.setItem('total-valor', precio*cantidad);
+                        console.log(precio*cantidad);
+                        $(`#precio-${i}`).text("$ "+ (cantidad*precio))
+                        arrayCarrito[i].editCantidad(cantidad);
+                        localStorage.setItem('carritoGuardado', JSON.stringify(arrayCarrito));
+                        generarCarrito();
+                    }
                 })
 
                 $(`#eliminar-${i}`).click(()=>{

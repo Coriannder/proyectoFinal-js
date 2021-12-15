@@ -20,6 +20,16 @@
     let arrayAuxiliar = JSON.parse(localStorage.getItem('carritoGuardado'));
     let arrayCarrito = new Array();
 
+    $('#cantidad-ingresada').change((e)=>{
+        while($(e.target).val() < 1 || isNaN($(e.target).val())){
+            $(e.target).val(1)
+        }
+    })
+    cantidadIngresada =parseInt($('#cantidad-ingresada').val());
+    console.log(typeof cantidadIngresada);
+    console.log(cantidadIngresada);
+
+
     function getCantidad(e){
         if(e.key == 'Enter'){
             agregarItem();
@@ -55,15 +65,15 @@
         cantidadIngresada = parseInt($('#cantidad-ingresada').val());
         
         if(isNaN(cantidadIngresada) || cantidadIngresada < 1){
-                $('#cantidad-ingresada').focus();
-                $('.ventana-cantidad').children('p').remove();
-                $('.ventana-cantidad').append('<p style= "color: red">Valor Incorrecto</p>');
+            $('#cantidad-ingresada').focus();
+            $('.ventana-cantidad').children('p').remove();
+            $('.ventana-cantidad').append('<p style= "color: red">Valor Incorrecto</p>');
         }else{
             arrayCarrito.push(new ItemCarrito(idProductoIngresado, cantidadIngresada));
             localStorage.setItem('carritoGuardado', JSON.stringify(arrayCarrito));
             $('#container-cantidad').css('display', 'none');
             $('.ventana-cantidad').children().eq(4).remove();
-            $('#cantidad-ingresada').val('1');
+            $('#cantidad-ingresada').css('placeholder', '0')/* val('1') */;
             $('.cantidad-img').children(1).remove();
             $('.cantidad-titulo').children().eq(1).remove();
         }

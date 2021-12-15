@@ -27,7 +27,8 @@
                 $('#apellido').append('<p style= "color: red">Debe ingresar un apellido</p>');
                 $('#apellido').children().eq(1).focus();
                 }else{
-                    sessionStorage.setItem('login', 'true')
+                    sessionStorage.setItem('login', 'true');
+                    $('#ingresar').hide();
                     generarCarrito();
                     let nombre = $('#nombre').children().eq(1).val();
                     let apellido = $('#apellido').children().eq(1).val();

@@ -21,6 +21,7 @@ $(document).ready(()=>{
     }else{
         $('#ingresar').click(()=>{
             $('.container-form').show();
+            $('#nombre').focus()
             $('.container-producto').hide();
         })
     }
