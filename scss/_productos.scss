@@ -13,6 +13,13 @@
     overflow: hidden;
     margin-bottom: calc(var(--bs-gutter-x) * 1);
 }
+.producto:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    opacity: 10;
+}
+
+
 .producto-img{
     width: 90%;
     border-radius: 6%;
