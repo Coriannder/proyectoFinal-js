@@ -1,5 +1,4 @@
 
-
     class Usuario {
         constructor(id, nombre, apellido){
             this.id = id;
@@ -9,7 +8,6 @@
     }
 
     let user;
-
     $('.formulario').submit(validarFormulario);
 
     function validarFormulario(e){

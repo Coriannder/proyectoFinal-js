@@ -1,5 +1,4 @@
 
-
     let idProductoIngresado;
 
     function datosCantidad() {

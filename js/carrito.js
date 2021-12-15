@@ -1,5 +1,4 @@
 
-
     const urlProductos = 'json/listaProductos.json';
     $.ajax({
         url: urlProductos,
