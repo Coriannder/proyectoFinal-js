@@ -42,6 +42,7 @@
     $('.btn-cerrar').click(()=>{
         $('#container-cantidad').css('display', 'none');
         $('.cantidad-img').children(1).remove();
+        $('.cantidad-titulo').children('p').remove()
     })
 
     $('.btn-agregar').click(()=>{

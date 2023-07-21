@@ -14,7 +14,7 @@ class Producto{
 $(document).ready(()=>{
     let login = sessionStorage.getItem('login');
     if(login == 'true'){
-        generarCarrito();                  //Delarada en carrito.js
+        generarCarrito();                  //Declarada en carrito.js
         $('#nav-usuario').show().text(sessionStorage.getItem('nombre')).prepend(`<img id="usuario-img" src="/img/usuario.png" alt="">`);
         $('#usuario-img').show();
         $('#ingresar').hide();
@@ -45,10 +45,10 @@ $(document).ready(()=>{
                                     </div>`)
             }
         }})
-    $('.producto').click(function(e){   
+    $('.producto').click(function(e){
         login = sessionStorage.getItem('login');
         let productoIngresado = e.currentTarget.children[1].textContent;
-        idProductoIngresado = arrayProductos.find(item => item.producto == productoIngresado).id;
+        idProductoIngresado = arrayProductos.find(item => item.producto === productoIngresado).id;
         datosCantidad();     //declarada en cantidad.js
         $('.cantidad-img').append(`<img class="img-fluid" src=" ${arrayProductos.find(item=>item.producto == productoIngresado).foto} " alt="">`);
         if(login == 'true'){

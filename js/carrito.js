@@ -15,8 +15,8 @@
         arrayAuxiliar = JSON.parse(localStorage.getItem('carritoGuardado'));
         arrayCarrito = new Array();
 
-        if(arrayAuxiliar == null){
-        }else{
+        if(arrayAuxiliar !== null){
+
             for(const articulo of arrayAuxiliar){
                 arrayCarrito.push(new ItemCarrito(articulo.idProducto, articulo.cantidad));
                 
@@ -29,7 +29,7 @@
                                     )
         let total = 0;
 
-        if(arrayCarrito != null){
+        if(arrayCarrito !== null){
             
             let cantidadCarrito = 0;
 
