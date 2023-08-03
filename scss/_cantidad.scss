@@ -38,44 +38,36 @@
     border-radius: 0;
 }
 
-.cantidad-titulo{
-    display: flex;
-    
-    p{
-        width: calc(100% - 100px);
-        margin-left: 10%;
-        font-size: 1.25rem;
-        font-weight: bolder;
+.cantidad{
+    &-titulo{
+        display: flex;
+        p{
+            width: calc(100% - 100px);
+            margin-left: 10%;
+            font-size: 1.25rem;
+            font-weight: bolder;
+        }
+    }
 
+    &-img{
+        width: 400px;
+        border:2px solid gray;
+        border-radius: 10px;
     }
 }
-
-.cantidad-img{
-    width: 400px;
-    border:2px solid gray;
-    border-radius: 10px;
-}
-
 
 .descripcion{
     padding-top: 20px;
     min-height: 150px;
     margin: 20px;
-    
 }
 
 .botones{
     display: flex;
     justify-content: space-between;
-    
 }
 
 #cantidad-ingresada{
     width: 50px;
     height: 38px;
 }
-
-
-
-
-

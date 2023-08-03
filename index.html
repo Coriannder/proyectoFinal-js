@@ -8,13 +8,10 @@
 
     <!-------------------------BOOTSTRP---------------------->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    
     <link rel="stylesheet" href="css/miEstilo.css">
 
 </head>
 <body>
-  
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -45,35 +42,21 @@
 
 
   <div class="container container-producto">
-    <div class="row" id="container-row">
-
-      <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-6 ">
-        <div class="producto">
-          <div class="producto-cont-img">
-            <img src="img/Productos/Mandarinas.jpg" alt="mandarinas" class="producto-img">
-          </div>
-          <div class="producto-nombre">Tarta de Mandarinas</div>
-          <div class="producto-precio">$3200</div>
-        </div>
-      </div> -->
-
-    </div>
-
+    <div class="row" id="container-row"></div>
   </div>
 
-
   <div class="container container-form">
-
+    
     <form class="formulario">
 
       <div class="mb-3" id="nombre">
         <label for="nombre"  class="form-label">Nombre</label>
-        <input type="text" class="form-control" name="nombre"  >
+        <input name="nombre" type="text" class="form-control"  >
       </div>
 
       <div class="mb-3" id="apellido">
         <label  for="apellido" class="form-label">Apellido</label>
-        <input type="text" class="form-control" name="apellido" >
+        <input type="text" class="form-control" name="apellido"  >
       </div>
 
       <button type="submit" class="btn btn-primary">Ingresar</button>
@@ -88,23 +71,17 @@
       <button type="button" class="btn btn-outline-dark btn-cerrar">X</button>
 
       <div class="cantidad-titulo">
-        <div class="cantidad-img">
-          <!-- <img class="img-fluid" src="img/Productos/Mandarinas.jpg" alt=""> -->
-        </div>
-        <!-- <p>Torta de mandarinas</p> -->
+        <div class="cantidad-img"></div>
       </div>
 
-      <div class="descripcion">
-      </div>
+      <div class="descripcion"></div>
 
       <div class="botones">
         <div>
           <label for="cantidad-ingresada">Cantidad</label>
           <input type="number" id="cantidad-ingresada" >
         </div>
-        
         <button type="button" min="0" class="btn btn-success btn-agregar">Agregar</button>
-        
       </div>
 
     </div>
@@ -113,34 +90,7 @@
 
 
   <div class="container container-carrito">
-
-    <div class="ventana-carrito">
-
-
-      <!-- <button type="button" class="btn btn-outline-dark " id="btn-cerrar-carrito">X</button>
-
-      <div class="col-12 carrito-encabezado">Productos</div> -->
-      
-      <!-- <div class="row carrito-item">
-
-        <div class="col-md-2 carrito-cont-img">
-          <img src="img/Productos/Mandarinas.jpg" class="carrito-img" alt="">
-        </div>
-        <div class="col-md-4 col-sm-4 carrito-nombre">nombre Producto</div>
-        <div class="col-md-3 col-sm-4 carrito-cantidad">
-          <p>Cantidad  </p>
-          <input type="number" class="item-cantidad" id="cantidad-1">
-        </div>
-        <div class="col-sm-2 carrito-precio" id="precio-1">$ 1500</div>
-        <div class="col-sm-1" >
-          <img src="img/botones/btn-eliminar-producto.png" id="btn-eliminar" alt="">
-        </div>
-
-      </div> -->
-
-
-    </div>
-
+    <div class="ventana-carrito"></div>
   </div>
 
   <div class="container container-compra">
@@ -153,19 +103,18 @@
     </div>
   </div>
 
- <!-------------------------JQUERY---------------------->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-------------------------JQUERY---------------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <!------------------------BOOTSTRAP-------------------->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
- 
- <script src="js/cantidad.js"></script>
- <script src="js/productos.js"></script>
- <script src="js/formulario.js"></script>
- <script src="js/carrito.js"></script>
- <script src="js/compra.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
- 
+  <script src="js/cantidad.js"></script>
+  <script src="js/productos.js"></script>
+  <script src="js/formulario.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/compra.js"></script>
+
 </body>
 </html>
 

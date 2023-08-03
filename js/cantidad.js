@@ -26,9 +26,6 @@
         }
     })
     cantidadIngresada =parseInt($('#cantidad-ingresada').val());
-    console.log(typeof cantidadIngresada);
-    console.log(cantidadIngresada);
-
 
     function getCantidad(e){
         if(e.key == 'Enter'){
@@ -62,9 +59,8 @@
         }
 
         idProductoIngresado = arrayProductos.find(item => item.producto == $('.cantidad-titulo').last().text().trim()).id;
-    
         cantidadIngresada = parseInt($('#cantidad-ingresada').val());
-        
+
         if(isNaN(cantidadIngresada) || cantidadIngresada < 1){
             $('#cantidad-ingresada').focus();
             $('.ventana-cantidad').children('p').remove();

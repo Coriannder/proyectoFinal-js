@@ -32,7 +32,6 @@ $(document).ready(()=>{
         type: 'GET',
         success: function(respuesta){
             for(let i=0; i < respuesta.length; i++){
-                
                 arrayProductos[i] = new Producto(respuesta[i]);
                 $('#container-row').append(`<div class="col-lg-3 col-md-4 col-sm-6 col-6 ">
                                         <div class="producto">
@@ -60,6 +59,4 @@ $(document).ready(()=>{
             $('.container-producto').hide();
         }
     })
-    
-    
 })

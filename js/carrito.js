@@ -19,10 +19,10 @@
 
             for(const articulo of arrayAuxiliar){
                 arrayCarrito.push(new ItemCarrito(articulo.idProducto, articulo.cantidad));
-                
+
             }
         }
-        
+
         $('.ventana-carrito').append(`
                                         <button type="button" class="btn btn-outline-dark " id="btn-cerrar-carrito">X</button>
                                         <div class="col-12 carrito-encabezado">Productos</div>`
@@ -30,7 +30,7 @@
         let total = 0;
 
         if(arrayCarrito !== null){
-            
+
             let cantidadCarrito = 0;
 
             for(let i=0; i < arrayCarrito.length; i++){
@@ -52,9 +52,10 @@
                                                     </div>
                                                 </div>`
                 )
+
                 let cantidad = arrayCarrito[i].cantidad;
                 let precio = arrayProductos.find(item => item.producto == $(`#nombre-${i}`).text()).precio;
-                
+
                 $(`#precio-${i}`).text("$ "+ (cantidad*precio))
                 $(`#cantidad-${i}`).val(cantidad).change((e)=>{
                     cantidad = parseInt($(e.target).val());

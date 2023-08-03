@@ -4,12 +4,12 @@
     .navbar-expand-sm .navbar-collapse {  // Clase de bootstrap
         justify-content: flex-end;
     }
-    }
-
+}
 
 .containerImgCarrito{
     width: 22px;
     height: 22px;
+
     img{
         width: 100%;
     }
@@ -29,6 +29,7 @@
     text-align: center;
     display: none;
 }
+
 @media (max-width: 576px){
     #circulo-rojo{
         /* display: none; */
@@ -39,14 +40,12 @@
 
 #nav-usuario{
     color: rgba(255,255,255,.55);
-    align-items: center; 
+    align-items: center;
     padding-left: 25%;
     display: none;
 }
 
 #usuario-img{
     padding-right: 10px;
-    
-    
 }
 

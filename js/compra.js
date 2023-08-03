@@ -3,7 +3,7 @@
         $('.container-compra').hide();
         $('.container-producto').show();
         localStorage.clear();
-        generarCarrito();       
+        generarCarrito();
     })
 
     $('.compra-usuario').text(sessionStorage.getItem('nombre'));
