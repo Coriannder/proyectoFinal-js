@@ -8,12 +8,13 @@
     position: fixed;
     top: 0;
     left: 0;
-
     display: none;
+    overflow-y: scroll;
 }
 
 .ventana-cantidad{
     background-color: white;
+    overflow-y: scroll;
 
     max-width: 700px;
     width: 80vw;

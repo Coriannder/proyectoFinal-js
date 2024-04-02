@@ -107,7 +107,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  display: none; }
+  display: none;
+  overflow-y: scroll; }
 
 .ventana-cantidad {
   background-color: white;
@@ -116,7 +117,8 @@
   min-height: 500px;
   padding: 20px 40px;
   padding-bottom: 40px;
-  margin-top: 40px; }
+  margin-top: 40px;}
+
 
 @media (max-width: 875px) {
   .ventana-cantidad {
