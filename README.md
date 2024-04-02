@@ -1,0 +1,4 @@
+# Proyecto Final del curso de JAVASCRIPT
+
+Este proyecto consta de un ecommerce de una pasteleria inventada para el curso. Es un sitio donde el usuario puede loguearse y anadir productos a un carrito para posteriormente ejecutar una orden de compra.
+En este curso aprendi los fundamentos del lenguaje de programación más usado en la actualidad [JS](https://www.javascript.com/), con el cual es posible crear aplicaciones de todo tipo, aprendi inicialmente las herramientas propias del lenguaje, indagando casos prácticos de aplicación, la utilidad de las librerías estudiando cómo aplicar técnicas de desarrollo para apps modernas con AJAX.
